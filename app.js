@@ -64,7 +64,6 @@ console.log('Exercise 3 result:', foods);
 
 
 
-
 /*
 Exercise 4: Access an array element
 
@@ -78,7 +77,7 @@ Complete Exercise 4 in the space below:
 
 
 
-favFood = foods[1];
+const favFood = foods[1];
 
 console.log('Exercise 4 result:', favFood);
 
@@ -100,7 +99,7 @@ Complete Exercise 5 in the space below:
 */
 
 
-foods.splice(2,0, 'tofu');
+const foods.splice(2,0, 'tofu');
 
 console.log('Exercise 5 result:', foods);
 
@@ -121,7 +120,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-foods.splice(1,1, 'sushi', 'cupcake');
+const foods.splice(1,1, 'sushi', 'cupcake');
 
 console.log('Exercise 6 result:', foods);
 
@@ -144,7 +143,7 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
-yummy = foods.slice(1,3);
+const yummy = foods.slice(1,3);
 
 console.log('Exercise 7 result:', yummy);
 
@@ -165,7 +164,7 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-    let soyIdx = foods.indexOf('tofu');
+let soyIdx = foods.indexOf('tofu');
 
 console.log('Exercise 8 result:', soyIdx);
 
@@ -187,7 +186,7 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 
-allFoods = foods.join(' --> ');
+const allFoods = foods.join(' --> ');
 
 console.log('Exercise 9 result:', allFoods);
 
@@ -236,7 +235,7 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 Complete Exercise 11 in the space below:
 */
 
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 // let odds = [];
 // for (let odd of nums) {
@@ -274,33 +273,33 @@ Complete Exercise 12 in the space below:
 
 
 
-const fizz = [];
-const buzz = [];
-const fizzbuzz = [];
+// const fizz = [];
+// const buzz = [];
+// const fizzbuzz = [];
 
 
-for (let divThree of nums) {
-    if (divThree % 3 === 0){
-        fizz.push(divThree)
-    }
-}
+// for (let divThree of nums) {
+//     if (divThree % 3 === 0){
+//         fizz.push(divThree)
+//     }
+// }
 
-for (let divFive of nums) {
-    if (divFive % 5 === 0){
-        buzz.push(divFive)
-    }
-}
+// for (let divFive of nums) {
+//     if (divFive % 5 === 0){
+//         buzz.push(divFive)
+//     }
+// }
 
-for (let divBoth of nums) {
-    if (divBoth % 3 === 0 && divBoth % 5 === 0){
-        fizzbuzz.push(divBoth)
-    }
-}
+// for (let divBoth of nums) {
+//     if (divBoth % 3 === 0 && divBoth % 5 === 0){
+//         fizzbuzz.push(divBoth)
+//     }
+// }
 
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+// console.log('Exercise 12 Results:');
+// console.log('  fizz:', fizz);
+// console.log('  buzz:', buzz);
+// console.log('  fizzbuzz:', fizzbuzz);
 
 
 
@@ -319,16 +318,16 @@ Exercise 13: Retrieve the Last Array
 Complete Exercise 13 in the space below:
 */
 
-const numArrays = [
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
-];
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
 
-numList = numArrays[numArrays.length -1];
+// numList = numArrays[numArrays.length -1];
 
-console.log('Exercise 13 result:', numList);
+// console.log('Exercise 13 result:', numList);
 
 
 
@@ -345,10 +344,10 @@ Complete Exercise 14 in the space below:
 */
 
 
-let num = (numArrays[2] [1])
+// let num = (numArrays[2] [1])
 
 
-console.log('Exercise 14 result:', num);
+// console.log('Exercise 14 result:', num);
 
 
 
@@ -381,11 +380,11 @@ Complete Exercise 15 in the space below:
 //     }
 //   }
 
-numArrays.forEach((array) => {
-     array.forEach((num) => {
-        total += num;
-    });
-});
+// numArrays.forEach((array) => {
+//      array.forEach((num) => {
+//         total += num;
+//     });
+// });
 
 
-console.log('Exercise 15 result:\n', total);
+// console.log('Exercise 15 result:\n', total);
