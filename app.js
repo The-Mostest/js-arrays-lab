@@ -206,17 +206,15 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-// hasSoup = foods.includes('soup');
+const hasSoup = foods.includes('soup');
+//includes checks if the array includes 
 
-// console.log('Exercise 10 result:', hasSoup);
-
-
-
+console.log('Exercise 10 result:', hasSoup);
 
 
-// for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i]);
-// }
+
+
+
 
 
 
@@ -235,16 +233,22 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 Complete Exercise 11 in the space below:
 */
 
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
-// let odds = [];
-// for (let odd of nums) {
-//   if (odd % 2 !== 0) {
-//     odds.push(odd);
-//   }
-// }
+let odds = [];
+for (let odd of nums) {
+  if (odd % 2 !== 0) {
+    odds.push(odd);
+  }
+}
 
-// console.log('Exercise 11 result:', odds);
+// const odds = nums.filter((num) => num % 2 != 0);3
+//Alternative way ^
+
+
+
+
+console.log('Exercise 11 result:', odds);
 
 
 
@@ -273,33 +277,33 @@ Complete Exercise 12 in the space below:
 
 
 
-// const fizz = [];
-// const buzz = [];
-// const fizzbuzz = [];
+const fizz = [];
+const buzz = [];
+const fizzbuzz = [];
 
 
-// for (let divThree of nums) {
-//     if (divThree % 3 === 0){
-//         fizz.push(divThree)
-//     }
-// }
+for (let divThree of nums) {
+    if (divThree % 3 === 0){
+        fizz.push(divThree)
+    }
+}
 
-// for (let divFive of nums) {
-//     if (divFive % 5 === 0){
-//         buzz.push(divFive)
-//     }
-// }
+for (let divFive of nums) {
+    if (divFive % 5 === 0){
+        buzz.push(divFive)
+    }
+}
 
-// for (let divBoth of nums) {
-//     if (divBoth % 3 === 0 && divBoth % 5 === 0){
-//         fizzbuzz.push(divBoth)
-//     }
-// }
+for (let divBoth of nums) {
+    if (divBoth % 3 === 0 && divBoth % 5 === 0){
+        fizzbuzz.push(divBoth)
+    }
+}
 
-// console.log('Exercise 12 Results:');
-// console.log('  fizz:', fizz);
-// console.log('  buzz:', buzz);
-// console.log('  fizzbuzz:', fizzbuzz);
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
 
 
@@ -318,16 +322,16 @@ Exercise 13: Retrieve the Last Array
 Complete Exercise 13 in the space below:
 */
 
-// const numArrays = [
-// 	[100, 5, 23],
-// 	[15, 21, 72, 9],
-// 	[45, 66],
-// 	[7, 81, 90]
-// ];
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
 
-// numList = numArrays[numArrays.length -1];
+numList = numArrays[numArrays.length -1];
 
-// console.log('Exercise 13 result:', numList);
+console.log('Exercise 13 result:', numList);
 
 
 
@@ -344,10 +348,10 @@ Complete Exercise 14 in the space below:
 */
 
 
-// let num = (numArrays[2] [1])
+let num = (numArrays[2] [1])
 
 
-// console.log('Exercise 14 result:', num);
+console.log('Exercise 14 result:', num);
 
 
 
@@ -365,12 +369,12 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
-// let total = 0;
+let total = 0;
 
-// const x = () => {
-//     for (let i = 0; i < numArrays.length; i++)
-//         total += numArrays[i]
-// }
+const x = () => {
+    for (let i = 0; i < numArrays.length; i++)
+        total += numArrays[i]
+}
 
 // let total = 0;
 
@@ -380,11 +384,14 @@ Complete Exercise 15 in the space below:
 //     }
 //   }
 
-// numArrays.forEach((array) => {
-//      array.forEach((num) => {
-//         total += num;
-//     });
-// });
+// The longer way around ^
 
 
-// console.log('Exercise 15 result:\n', total);
+numArrays.forEach((array) => {
+     array.forEach((num) => {
+        total += num;
+    });
+});
+
+
+console.log('Exercise 15 result:\n', total);
